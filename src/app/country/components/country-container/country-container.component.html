@@ -1,0 +1,10 @@
+<div class="container">
+    <h1> Welcome to Deutsche Bank Exercise</h1>
+</div>
+<div class="center">
+    <app-dropdown *ngIf="regionItems" [typeText]="'Regions'" [options]="regionItems" (selectionChanged)="selectionChanged($event, 'Region')"></app-dropdown>
+</div>
+<div class="center" *ngIf="countryItems && countryItems.length > 0">
+    <app-dropdown [typeText]="'Countries'" [options]="countryItems" (selectionChanged)="selectionChanged($event, 'Countries')"></app-dropdown>
+    <app-country-detail *ngIf="countryTableData && countryTableData.length > 0" [data]="countryTableData"></app-country-detail>
+</div>

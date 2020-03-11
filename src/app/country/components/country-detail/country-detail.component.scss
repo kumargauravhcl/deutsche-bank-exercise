@@ -1,0 +1,20 @@
+table {
+  width: calc(100% - 40px);
+  margin: 20px;
+}
+
+button {
+  margin: 16px 8px;
+}
+
+img {
+  margin: 5px 0px 0px 0px;
+  border: 1px solid black;
+  width: 75px;
+}
+
+th.mat-header-cell {
+  text-align: center !important;
+  font-weight: 700;
+  font-size: 20px;
+}
